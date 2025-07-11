@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>SOAZI Foreign Employment Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #4CAF50; /* Light green */
+            --secondary: #FFD700; /* Gold */
+            --dark: #333;
+            --light: #f9f9f9;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+        }
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('workers-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .logo {
+            width: 200px;
+            margin: 0 auto 1rem;
+        }
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            font-weight: 600;
+        }
+        /* Main Content */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            border: 1px solid #ddd;
+            padding: 2rem;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#countries">Countries</a></li>
+            <li><a href="#success">Success Stories</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Header -->
+    <header id="home">
+        <img src="soazi-logo.png" alt="SOAZI Logo" class="logo">
+        <h1>SOAZI FOREIGN EMPLOYMENT AGENCY</h1>
+        <p>Connecting Ethiopian professionals with opportunities in Gulf countries since 2003</p>
+        <a href="#contact" style="background: var(--secondary); color: var(--dark); padding: 0.8rem 2rem; display: inline-block; margin-top: 2rem; text-decoration: none; font-weight: bold;">Apply Now</a>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Employment Placement</h3>
+                <p>We connect qualified candidates with reputable employers in Gulf countries</p>
+            </div>
+            <div class="service-card">
+                <h3>Visa Processing</h3>
+                <p>Complete documentation and visa processing assistance</p>
+            </div>
+            <div class="service-card">
+                <h3>Pre-Departure Training</h3>
+                <p>Cultural orientation and job-specific training programs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Section -->
+    <section id="countries" style="background: var(--light);">
+        <h2>We Recruit For</h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+            <div style="text-align: center;">
+                <img src="ksa-flag.png" alt="Saudi Arabia" style="width: 100px; height: auto;">
+                <p>Saudi Arabia (KSA)</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="uae-flag.png" alt="UAE" style="width: 100px; height: auto;">
+                <p>United Arab Emirates</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="qatar-flag.png" alt="Qatar" style="width: 100px; height: auto;">
+                <p>Qatar</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="kuwait-flag.png" alt="Kuwait" style="width: 100px; height: auto;">
+                <p>Kuwait</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="jordan-flag.png" alt="Jordan" style="width: 100px; height: auto;">
+                <p>Jordan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Categories -->
+    <section>
+        <h2>Job Categories</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; text-align: center;">
+            <div style="padding: 1rem; background: var(--secondary); border-radius: 5px;">
+                <h3>Housemaids</h3>
+            </div>
+            <div style="padding: 1rem; background: var(--secondary); border-radius: 5px;">
+                <h3>Nannies</h3>
+            </div>
+            <div style="padding: 1rem; background: var(--secondary); border-radius: 5px;">
+                <h3>Homecare Nurses</h3>
+            </div>
+            <div style="padding: 1rem; background: var(--secondary); border-radius: 5px;">
+                <h3>Drivers</h3>
+            </div>
+            <div style="padding: 1rem; background: var(--secondary); border-radius: 5px;">
+                <h3>Gardeners</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section id="success" style="background: var(--light);">
+        <h2>Success Stories</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+                <img src="worker-1.jpg" alt="Success Story" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+                <div>
+                    <h3>Amina's Story</h3>
+                    <p>"SOAZI helped me find a nursing position in Riyadh. Their support made the transition smooth and I've been able to support my family back home."</p>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 1.2rem; margin-top: 2rem;">
+                <strong>1000+ professionals</strong> successfully placed in Gulf countries over <strong>20 years</strong> of service
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div>
+                <h3>Get in Touch</h3>
+                <p><strong>Email:</strong> soazi8990@gmail.com</p>
+                <p><strong>Phone:</strong> +251905242526 / +251905232425</p>
+                <p><strong>Address:</strong> Addis Ababa, Ethiopia</p>
+                <p><strong>Facebook:</strong> <a href="https://web.facebook.com/profile.php?id=61578329394932" target="_blank">SOAZI Foreign Employment</a></p>
+            </div>
+            <div>
+                <h3>Send Us a Message</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem;">
+                    <input type="email" placeholder="Your Email" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem;">
+                    <textarea placeholder="Your Message" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; min-height: 150px;"></textarea>
+                    <button type="submit" style="background: var(--primary); color: white; border: none; padding: 1rem 2rem; cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 SOAZI Foreign Employment Agency. All Rights Reserved.</p>
+        <p style="margin-top: 1rem;">Website available in: <a href="#" style="color: var(--secondary);">English</a> | <a href="#" style="color: var(--secondary);">العربية</a></p>
+    </footer>
+</body>
+</html>
